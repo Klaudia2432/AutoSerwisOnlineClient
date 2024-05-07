@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Book a service";
+}
+
+<div class="background-image">
+</div>
+
+<h1 class="text-center pt-5 px-5">@ViewData["Title"]</h1>
+
+<h2 class="text-center px-5">Book a service using a form below</h2>
+
+<form action="POST" class="website-forms">
+    <input type="text" id="first-name" class="form-input" placeholder="First name (required)" required="required">
+    <input type="text" id="last-name" class="form-input" placeholder="Last name (required)" required="required">
+    <input type="text" id="email" class="form-input" placeholder="Email address (required)" required="required">
+    <input type="text" id="telephone" class="form-input" placeholder="Telephone number (required)" required="required">
+    <input type="text" id="car-reg" class="form-input" placeholder="Car registration number (required)" required="required">
+    <div class="date-time-pickers d-flex justify-content-between">
+        <input type="text" id="date-picker" class="date-picker-form" placeholder="Date (required)" onfocus="(this.type='date')" required="required">
+        <select id="time-picker" class="time-picker-form" name="time-picker" placeholder="Time (required)" required="required">
+            <option value="time-required">Time (required)</option>
+            <option value="11:00">11:00</option>
+            <option value="12:00">12:00</option>
+            <option value="13:00">13:00</option>
+        </select> 
+    </div>
+    
+    <textarea name="message" id="message-optional" class="message-optional-field" cols="20" rows="5" placeholder="Message (optional)"></textarea>
+    <button class="book-service-btn-confirm">Book a service</button>
+</form>

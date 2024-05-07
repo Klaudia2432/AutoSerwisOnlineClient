@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Help";
+}
+
+<div class="background-image">
+</div>
+
+<h1 class="text-center pt-5 px-5">@ViewData["Title"]</h1>
+
+<h2 class="text-center p-5">If you require any help or have any queries, please use the contact form below</h2>
+
+<form action="POST" class="website-forms">
+    <input type="text" id="first-name" class="form-input" placeholder="First name (required)" required="required">
+    <input type="text" id="email" class="form-input" placeholder="Email address (required)" required="required">
+    <input type="text" id="telephone" class="form-input" placeholder="Telephone number (required)" required="required">
+    <textarea name="message" id="message-optional" class="message-optional-field" cols="20" rows="5" placeholder="Message (optional)"></textarea>
+    <button class="book-service-btn-confirm">Submit</button>
+</form>

@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Auto Serwis Online";
+}
+
+<div class="align-content-center pb-5">
+    <div class="background-image">
+    </div>
+    <div class="book-service container-fluid text-center">
+        <h3>Book a service today!</h3>
+        <p>Need MOT? <br/>
+            Are you concerned about <br/>
+            your car condition? <br/>
+            Don’t wait until your car will be broken!</p>
+        <button id="book-service-btn">
+            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="BookService">
+                <p>Book a service</p>
+            </a>
+        </button>
+    </div>
+    <div class="container text-center">
+        <div class="col-12">
+            <h3>Why choose our services?</h3>
+        </div>
+        <div class="d-flex flex-column flex-sm-row flex-lg-row flex-xl-row justify-content-between py-5 gap-5 align-content-center mot-service-homepage">
+            <div>
+                <h2>Our Advantages</h2>
+                <p>We offer a full range of garage services for vehicle owners in Nowy Sącz. 
+                    Our specialists know how to take care of any problem, whether it's a passenger car or a mid-size truck or SUV.</p>
+            </div>
+            <img class="mot-image" src="css/mot.png" alt="mot service">
+        </div>
+        <div class="d-flex flex-column flex-sm-row flex-lg-row flex-xl-row justify-content-between py-5 gap-5 align-content-center tyres-service-homepage pb-5">
+            <img class="tyres-image" src="css/tyres.png" alt="tyres service">
+            <div>
+                <ul>
+                    <li>Over 900 five-star reviews</li>
+                    <li>Free diagnosis</li>
+                    <li>2 years warranty</li>
+                    <li>15 years of experience</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

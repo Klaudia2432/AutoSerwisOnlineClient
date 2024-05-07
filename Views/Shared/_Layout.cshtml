@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - AutoSerwisOnline</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/AutoSerwisOnline.styles.css" asp-append-version="true"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow navbar-top" style="background-color: #023061; padding: 1rem 2rem 1rem 2rem">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white fw-bold" style="transform: scale(.9, 1.2);" asp-area="" asp-controller="Home" asp-action="Index">Auto Serwis Online</a>
+            <button class="navbar-toggler btn-close-white" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav d-flex justify-content-end flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Homepage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="BookService">Book a service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="ContactPage">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="ReservationStatus">View status of reservation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="">
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+</div>
+<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top" style="background-color: #023061; color: #ffffff; margin-right: 0;">
+    <div class="col px-5">
+        <a class="navbar-brand text-white fw-bold" style="transform: scale(.9, 1.2);" asp-area="" asp-controller="Home" asp-action="Index">Auto Serwis Online</a>
+    </div>
+    <div class="col">
+
+    </div>
+
+    <div class="col px-5">
+        <h5>Contact Us</h5>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2 p-0 text-muted">Mobile: 0123456789</li>
+            <li class="nav-item mb-2 p-0 text-muted">Fax:    0123456789</li>
+            <li class="nav-item mb-2 p-0 text-muted">Email:  info@aso.com</li>
+            <li class="nav-item mb-2 p-0 text-muted">Adres:  Samochodowa 9</li>
+            <li class="nav-item mb-2 p-0 text-muted">12-345  Nowy Sacz</li>
+        </ul>
+    </div>
+
+    <div class="col px-5">
+        <h5><a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Help">Help</a></h5>
+    </div>
+
+    <div class="col px-5">
+        <h5><a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="TermsAndConditions">Terms & Conditions</a></h5>
+    </div>
+    <p class="text-muted px-5" style="padding-left: 2%;">© 2024 Klaudia Dziubek</p>
+</footer>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

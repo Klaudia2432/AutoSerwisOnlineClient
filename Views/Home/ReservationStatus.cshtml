@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "View status of reservation";
+}
+
+<div class="background-image">
+</div>
+
+<h1 class="text-center pt-5 px-5">@ViewData["Title"]</h1>
+
+<h2 class="text-center p-5">Enter reservation details into the following form to view the status of reservation</h2>
+
+<form action="POST" class="website-forms">
+    <input type="text" id="last-name" class="form-input" placeholder="Last name (required)" required="required">
+    <input type="text" id="email" class="form-input" placeholder="Email address (required)" required="required">
+    <input type="text" id="car-reg" class="form-input" placeholder="Car registration number (required)" required="required">
+    <button class="book-service-btn-confirm">Find reservation</button>
+</form>
+
+<div class="reservation-details">
+    <h4>Reservation details</h4>
+    <ul id="reservation-view">
+        <li>Service: </li>
+        <li>Date: </li>
+        <li>Time: </li>
+        <li>Car registration number: </li>
+        <li>First name: </li>
+        <li>Last name: </li>
+        <li>Email address: </li>
+        <li>Telephone number: </li>
+        <li>Price: </li>
+    </ul>
+</div>
+
+<button class="view-service-btn my-5">Cancel reservation</button>
+
+<h2 class="text-center pt-5 px-5">Would you like to amend personal details or change date/time of your visit?</h2>
+
+<button class="view-service-btn my-5">Contact us</button>

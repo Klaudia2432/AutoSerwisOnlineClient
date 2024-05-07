@@ -1,0 +1,160 @@
+html {
+  font-size: 14px;
+}
+
+.saira-font {
+  font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Saira", sans-serif;
+}
+
+.background-image {
+  background-image: url('tools-3.jpeg');
+  width: 100%;
+  height: 20rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.book-service {
+  padding: 1rem;
+  width: 31rem;
+  height: 18.5rem;
+  background-color: rgba(196, 196, 196, 80%);
+  position: relative;
+  bottom: 10rem;
+}
+
+.book-service::before {
+  opacity: 80%;
+}
+
+.book-service h3 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.book-service p {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+#book-service-btn {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  background-color: #023061;
+  width: 20rem;
+}
+
+#book-service-btn p {
+  margin: 0;
+  color: #fff;
+}
+
+.mot-image {
+  width: 29.5rem;
+  height: 15rem;
+}
+
+.tyres-image {
+  width: 29.5rem;
+  height: 15rem;
+}
+
+.contact-element {
+  font-size: 0.8rem;
+  width: 20%;
+  margin-left: 58%;
+}
+
+.website-forms {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20% 5%;
+}
+
+.form-input {
+  margin: 1%;
+  border: 1px solid #d5d5d5;
+  border-radius: 5px;
+  padding: 1%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 2px 0px inset;
+}
+
+.date-picker-form {
+  width: 45%;
+  margin: 1%;
+  border: 1px solid #d5d5d5;
+  border-radius: 5px;
+  padding: 1%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 2px 0px inset;
+}
+
+.time-picker-form {
+  color: gray;
+  width: 45%;
+  margin: 1%;
+  border: 1px solid #d5d5d5;
+  border-radius: 5px;
+  padding: 1%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 2px 0px inset;
+}
+
+.message-optional-field {
+  margin: 1%;
+  border: 1px solid #d5d5d5;
+  border-radius: 5px;
+  padding: 1%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 2px 0px inset;
+}
+
+.book-service-btn-confirm {
+  background-color: #023061;
+  color: #ffffff;
+  margin: 4% 15% 0 15%;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 1%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 2px 0px;
+}
+
+.view-service-btn {
+  background-color: #023061;
+  margin-left: 29%;
+  width: 42%;
+  color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: .6%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 2px 0px;
+}
+
+.reservation-details h4 {
+  padding-left: 20%;
+}
+
+#reservation-view {
+  margin: 0 20%;
+  list-style: none;
+  padding: 0;
+}
